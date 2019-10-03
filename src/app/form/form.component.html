@@ -1,0 +1,7 @@
+
+  <fa-icon class="Icon" [icon]="this.icon" (click) = "this.onClick()"></fa-icon>
+  <div class="SliderContainer">
+    <app-slider class="Slider" [sliderValue] = "this.sliders[0]" (valueChange) = "this.onSlidersChange(0,$event)"></app-slider>
+    <app-slider class="Slider" [sliderValue] = "this.sliders[1]" (valueChange) = "this.onSlidersChange(1,$event)"></app-slider>
+    <app-slider class="Slider" [sliderValue] = "this.sliders[2]" (valueChange) = "this.onSlidersChange(2,$event)"></app-slider>
+  </div>

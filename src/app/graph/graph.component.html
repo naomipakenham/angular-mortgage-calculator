@@ -1,0 +1,15 @@
+
+  <div class="Result">
+    {{this.graphData.result[0]}}
+    <b>{{this.graphData.result[1]}}</b>
+    {{this.graphData.result[2]}}
+    <b>{{this.graphData.result[3]}}</b>
+  </div>
+  <google-chart class='Graph' #chart
+     [type]="type"
+     [data]="this.graphData.graphArray"
+     [columnNames]="columnNames"
+     [options]="options"
+     [width]="width"
+     [height]="height">
+  </google-chart>
